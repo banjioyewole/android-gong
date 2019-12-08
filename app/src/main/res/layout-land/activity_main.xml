@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:paddingTop="24dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:id="@+id/top_frame"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/gong"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="92dp"
+        android:clickable="true"
+        android:foreground="@drawable/ripple"
+        app:cardBackgroundColor="@color/radiumPink"
+        app:cardCornerRadius="150dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gong_hero" />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:visibility="gone"
+
+        android:id="@+id/text"
+        android:layout_below="@+id/gong"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+
+        android:layout_alignParentEnd="true"
+        android:overScrollMode="never"
+        android:layout_margin="52dp"
+        android:layout_centerVertical="true"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:id="@+id/recyclerView"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>
