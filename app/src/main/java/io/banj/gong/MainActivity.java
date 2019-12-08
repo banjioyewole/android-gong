@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     long touchTime = Long.MAX_VALUE;
 
-    public static final String NETWORK_STUFF = "http://67.168.109.2";
+    public static final String NETWORK_STUFF = "http://97.113.215.55";
     public static final String LOCAL_NETWORK_STUFF = "http://192.168.1.101";
 
     public static final int NETWORK_STUFF_PORT = 1337;
